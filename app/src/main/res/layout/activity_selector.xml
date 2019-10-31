@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".activities.SelectorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SV">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="250dp"
+                android:background="@drawable/a2"
+                android:layout_height="250dp">
+
+            </ImageView>
+
+            <Button
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape"
+                android:text="Entrar como Comprador"
+                android:onClick="EntrarComoComprador"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_height="70dp">
+
+            </Button>
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape1"
+                android:text="Crear Tienda"
+                android:onClick="CrearTienda"
+                android:textSize="20sp"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_height="70dp">
+            </Button>
+
+            <ImageView
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_vector">
+
+            </ImageView>
+            <TextView
+                android:layout_gravity="center"
+                android:text="¿Aún no estás registrado?Registrate"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:onClick="Registro"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
